@@ -18,10 +18,10 @@
         </select>
         <br><br>
         <label for="gender">Выберите пол питомца:</label>
-        <select id="gender" name="gender">
-            <option value="boy">Мальчик</option>
-            <option value="girl">Девочка</option>
-        </select>
+        <input type="radio" id="boy" name="gender" value="boy">
+        <label for="boy">Мальчик</label>
+        <input type="radio" id="girl" name="gender" value="girl">
+        <label for="girl">Девочка</label>
         <br><br>
         <label for="eyeColor">Выберите цвет глаз:</label>
         <input type="color" id="eyeColor" name="eyeColor" value="#000000">
@@ -42,7 +42,7 @@
         <input type="tel" id="phone" name="phone" required>
         <br><br>
         <label for="rules">Согласен с правилами:</label>
-        <input type="radio" id="rules" name="rules" value="true">
+        <input type="checkbox" id="rules" name="rules" value="true">
         <br>
         <br>
         <button type="submit">Найти питомца</button>
