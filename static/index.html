@@ -8,9 +8,48 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
+    
     <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <label for="petType">Выберите тип питомца:</label>
+        <select id="petType" name="petType">
+            <option value="dog">Собака</option>
+            <option value="cat">Кошка</option>
+        </select>
+        <br><br>
+        <label for="gender">Выберите пол питомца:</label>
+        <select id="gender" name="gender">
+            <option value="boy">Мальчик</option>
+            <option value="girl">Девочка</option>
+        </select>
+        <br><br>
+        <label for="eyeColor">Выберите цвет глаз:</label>
+        <input type="color" id="eyeColor" name="eyeColor" value="#000000">
+        <br><br>
+        <label for="tailLength">Выберите длину хвоста:</label>
+        <input type="number" id="tailLength" name="tailLength" min="0" max="100">
+        <br><br>
+        <label for="name">Введите имя:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="dateOfBirth">Введите дату рождения:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+        <br><br>
+        <label for="email">Введите email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="phone">Введите номер телефона:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+        <label for="rules">Согласен с правилами:</label>
+        <input type="radio" id="rules" name="rules" value="true">
+        <br>
+        <br>
+        <button type="submit">Найти питомца</button>
 
+        <br><br>
+        <button type="reset">Очистить форму</button>
+    </form>
 </main>
 </body>
 </html>
